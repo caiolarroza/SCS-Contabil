@@ -1,0 +1,6 @@
+Arquivo destinado a descrição das alterações feitas na versão.
+
+Versao 0.1
+Criado projeto C# base
+Criado arquivo CHANGELOG.txt
+Adicionado banco de dados db_scs.sql

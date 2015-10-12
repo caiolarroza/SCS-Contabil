@@ -1,0 +1,20 @@
+C:\Users\LuizFernandodeSouza\Desktop\Danilo\SCSCONTABIL\SCSCONTABIL\bin\Debug\SCSCONTABIL.exe.config
+C:\Users\LuizFernandodeSouza\Desktop\Danilo\SCSCONTABIL\SCSCONTABIL\bin\Debug\SCSCONTABIL.exe
+C:\Users\LuizFernandodeSouza\Desktop\Danilo\SCSCONTABIL\SCSCONTABIL\bin\Debug\SCSCONTABIL.pdb
+C:\Users\LuizFernandodeSouza\Desktop\Danilo\SCSCONTABIL\SCSCONTABIL\obj\Debug\SCSCONTABIL.csprojResolveAssemblyReference.cache
+C:\Users\LuizFernandodeSouza\Desktop\Danilo\SCSCONTABIL\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmLogin.resources
+C:\Users\LuizFernandodeSouza\Desktop\Danilo\SCSCONTABIL\SCSCONTABIL\obj\Debug\SCSCONTABIL.Properties.Resources.resources
+C:\Users\LuizFernandodeSouza\Desktop\Danilo\SCSCONTABIL\SCSCONTABIL\obj\Debug\SCSCONTABIL.csproj.GenerateResource.Cache
+C:\Users\LuizFernandodeSouza\Desktop\Danilo\SCSCONTABIL\SCSCONTABIL\obj\Debug\SCSCONTABIL.exe
+C:\Users\LuizFernandodeSouza\Desktop\Danilo\SCSCONTABIL\SCSCONTABIL\obj\Debug\SCSCONTABIL.pdb
+F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\bin\Debug\SCSCONTABIL.exe.config
+F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\obj\Debug\SCSCONTABIL.exe
+F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\obj\Debug\SCSCONTABIL.pdb
+F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\bin\Debug\SCSCONTABIL.exe
+F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\bin\Debug\SCSCONTABIL.pdb
+F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\bin\Debug\MySql.Data.dll
+F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\obj\Debug\SCSCONTABIL.csprojResolveAssemblyReference.cache
+F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmLogin.resources
+F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmPrincipal.resources
+F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\obj\Debug\SCSCONTABIL.Properties.Resources.resources
+F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\obj\Debug\SCSCONTABIL.csproj.GenerateResource.Cache
