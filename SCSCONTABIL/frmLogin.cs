@@ -81,8 +81,6 @@ namespace SCSCONTABIL
                         //Se existir dados:
                         if (reader.HasRows)
                         {
-                            //Manda uma mensagem.
-                            MessageBox.Show("Login efetuado com sucesso.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             //Chama o formulário principal;
                             frmPrincipal principal = new frmPrincipal();
                             principal.Show();
@@ -94,7 +92,7 @@ namespace SCSCONTABIL
                             //Se não existirem dados, é mandado uma mensagem.
                             MessageBox.Show("Informações incorretas.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             //O campo de senha fica vazio:
-                            txtSenha.Text = "";
+                            txtUsuario.Text = "";
                             //O campo senha recebe foco.
                             txtSenha.Focus();
                         }
@@ -102,7 +100,7 @@ namespace SCSCONTABIL
                     catch (Exception erro)
                     {
                         //Se algum erro ocorrer é mandado esta mensagem e a conexao com o banco de dados se fecha.
-                        MessageBox.Show("Erro: " + erro.Message, "Um erro ocorreu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Erro: " + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         conexao.fechar();
                     }
                 }

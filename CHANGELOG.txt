@@ -1,6 +1,15 @@
 Arquivo destinado a descrição das alterações feitas na versão.
 
+
+
+Versao 0.2
+Criados os menus de cadastro (frmCadastrar), exclusao (frmExcluir), consulta(frmConsultar)
+Feita a ligacao entre as telas
+Inclusao dos botoes para as telas de cadastro, exclusao, consulta e para sair do sistema
+
 Versao 0.1
 Criado projeto C# base
 Criado arquivo CHANGELOG.txt
 Adicionado banco de dados db_scs.sql
+
+
