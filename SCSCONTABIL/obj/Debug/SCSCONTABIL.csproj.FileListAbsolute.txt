@@ -18,3 +18,17 @@ F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmLogi
 F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmPrincipal.resources
 F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\obj\Debug\SCSCONTABIL.Properties.Resources.resources
 F:\FATEC\2º Semestre\INTERDISCIPLINAR\SCSCONTABIL\obj\Debug\SCSCONTABIL.csproj.GenerateResource.Cache
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\bin\Debug\SCSCONTABIL.exe.config
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.exe
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.pdb
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\bin\Debug\SCSCONTABIL.exe
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\bin\Debug\SCSCONTABIL.pdb
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\bin\Debug\MySql.Data.dll
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.csprojResolveAssemblyReference.cache
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmCadastrar.resources
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmConsultar.resources
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmLogin.resources
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmPrincipal.resources
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.Properties.Resources.resources
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.csproj.GenerateResource.Cache
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmExcluir.resources
