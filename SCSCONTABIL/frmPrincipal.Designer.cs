@@ -28,48 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.btnConsultar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnCadUsu = new System.Windows.Forms.Button();
+            this.btnCadFor = new System.Windows.Forms.Button();
+            this.btnCadPro = new System.Windows.Forms.Button();
+            this.btnConPro = new System.Windows.Forms.Button();
+            this.btnConFor = new System.Windows.Forms.Button();
+            this.btnConUsu = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnCadastrar
+            // label1
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(12, 58);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(189, 67);
-            this.btnCadastrar.TabIndex = 0;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(88, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cadastro";
             // 
-            // btnConsultar
+            // btnCadUsu
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(321, 58);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(189, 67);
-            this.btnConsultar.TabIndex = 1;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            this.btnCadUsu.Location = new System.Drawing.Point(38, 85);
+            this.btnCadUsu.Name = "btnCadUsu";
+            this.btnCadUsu.Size = new System.Drawing.Size(165, 23);
+            this.btnCadUsu.TabIndex = 1;
+            this.btnCadUsu.Text = "Cadastrar Usuário";
+            this.btnCadUsu.UseVisualStyleBackColor = true;
+            this.btnCadUsu.Click += new System.EventHandler(this.btnCadUsu_Click);
             // 
-            // btnExcluir
+            // btnCadFor
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(12, 219);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(189, 67);
-            this.btnExcluir.TabIndex = 2;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            this.btnCadFor.Location = new System.Drawing.Point(38, 124);
+            this.btnCadFor.Name = "btnCadFor";
+            this.btnCadFor.Size = new System.Drawing.Size(165, 23);
+            this.btnCadFor.TabIndex = 2;
+            this.btnCadFor.Text = "Cadastrar Fornecedor";
+            this.btnCadFor.UseVisualStyleBackColor = true;
+            // 
+            // btnCadPro
+            // 
+            this.btnCadPro.Location = new System.Drawing.Point(38, 164);
+            this.btnCadPro.Name = "btnCadPro";
+            this.btnCadPro.Size = new System.Drawing.Size(165, 23);
+            this.btnCadPro.TabIndex = 3;
+            this.btnCadPro.Text = "Cadastrar Produto";
+            this.btnCadPro.UseVisualStyleBackColor = true;
+            // 
+            // btnConPro
+            // 
+            this.btnConPro.Location = new System.Drawing.Point(303, 164);
+            this.btnConPro.Name = "btnConPro";
+            this.btnConPro.Size = new System.Drawing.Size(165, 23);
+            this.btnConPro.TabIndex = 7;
+            this.btnConPro.Text = "Consultar Produto";
+            this.btnConPro.UseVisualStyleBackColor = true;
+            // 
+            // btnConFor
+            // 
+            this.btnConFor.Location = new System.Drawing.Point(303, 124);
+            this.btnConFor.Name = "btnConFor";
+            this.btnConFor.Size = new System.Drawing.Size(165, 23);
+            this.btnConFor.TabIndex = 6;
+            this.btnConFor.Text = "Consultar Fornecedor";
+            this.btnConFor.UseVisualStyleBackColor = true;
+            // 
+            // btnConUsu
+            // 
+            this.btnConUsu.Location = new System.Drawing.Point(303, 85);
+            this.btnConUsu.Name = "btnConUsu";
+            this.btnConUsu.Size = new System.Drawing.Size(165, 23);
+            this.btnConUsu.TabIndex = 5;
+            this.btnConUsu.Text = "Consultar Usuário";
+            this.btnConUsu.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(353, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Consulta";
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(321, 219);
+            this.btnSair.Location = new System.Drawing.Point(213, 256);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(189, 67);
-            this.btnSair.TabIndex = 3;
+            this.btnSair.Size = new System.Drawing.Size(75, 23);
+            this.btnSair.TabIndex = 8;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -78,23 +126,35 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 369);
+            this.ClientSize = new System.Drawing.Size(504, 291);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.btnExcluir);
-            this.Controls.Add(this.btnConsultar);
-            this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.btnConPro);
+            this.Controls.Add(this.btnConFor);
+            this.Controls.Add(this.btnConUsu);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnCadPro);
+            this.Controls.Add(this.btnCadFor);
+            this.Controls.Add(this.btnCadUsu);
+            this.Controls.Add(this.label1);
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.Button btnConsultar;
-        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCadUsu;
+        private System.Windows.Forms.Button btnCadFor;
+        private System.Windows.Forms.Button btnCadPro;
+        private System.Windows.Forms.Button btnConPro;
+        private System.Windows.Forms.Button btnConFor;
+        private System.Windows.Forms.Button btnConUsu;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSair;
     }
 }
