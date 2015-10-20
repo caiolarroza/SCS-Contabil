@@ -14,6 +14,7 @@ namespace SCSCONTABIL
 {
     public partial class frmLogin : Form
     {
+        static string buscaUser;
         public frmLogin()
         {
             InitializeComponent();
@@ -63,8 +64,10 @@ namespace SCSCONTABIL
 
                     try
                     {
-                        //Pega o usuário digitado.
+                        //Pega o usuário digitado. 
                         String user = txtUsuario.Text;
+                        //Para passar a informação do user através de get e set
+                        buscaUser = user;
                         //Pega a senha digitada.
                         String senha = txtSenha.Text;
                         //Seleciona todos os dados da tabela usuário onde o nome for igual ao digitado e a senha igual a digitada.
@@ -81,6 +84,7 @@ namespace SCSCONTABIL
                         //Se existir dados:
                         if (reader.HasRows)
                         {
+                            conexao.fechar();
                             //Chama o formulário principal;
                             frmPrincipal principal = new frmPrincipal();
                             principal.Show();
@@ -90,11 +94,12 @@ namespace SCSCONTABIL
                         else
                         {
                             //Se não existirem dados, é mandado uma mensagem.
-                            MessageBox.Show("Informações incorretas.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            //O campo de senha fica vazio:
+                            lblErro.Text = "Informações Incorretas";
+                            //Os campos de senha e usuario ficam vazios:
                             txtUsuario.Text = "";
+                            txtSenha.Text = "";
                             //O campo senha recebe foco.
-                            txtSenha.Focus();
+                            txtUsuario.Focus();
                         }
                     }
                     catch (Exception erro)
@@ -114,6 +119,11 @@ namespace SCSCONTABIL
             {
                 efetuar_login();
             }
+        }
+
+        public string getUsuario()
+        {
+            return buscaUser;
         }
     }
 }
