@@ -43,7 +43,7 @@ namespace SCSCONTABIL
             if (txtUsuario.Text.Equals(""))
             {
                 //Manda uma mensagem ao usuário.
-                MessageBox.Show("Digite o usuário.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                lblErro.Text = "Digite o usuário";
                 //Seta o foco no textbox Usuario.
                 txtUsuario.Focus();
             }
@@ -53,7 +53,7 @@ namespace SCSCONTABIL
                 if (txtSenha.Text.Equals(""))
                 {
                     //Manda uma mensagem ao usuário.
-                    MessageBox.Show("Digite a senha.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    lblErro.Text = "Digite a senha";
                     //Seta o foco no textbox Senha.
                     txtSenha.Focus();
                 }

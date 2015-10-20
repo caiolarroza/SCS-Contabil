@@ -62,7 +62,7 @@ namespace SCSCONTABIL
 
         private void frmCadUsu_Load(object sender, EventArgs e)
         {
-            lblStatus.ForeColor = Color.Red;
+            
         }
 
         private void txtUsu_TextChanged(object sender, EventArgs e)
@@ -88,6 +88,7 @@ namespace SCSCONTABIL
                     //verificar se o nome ja está em uso
                     if (readerNome.HasRows)
                     {   //se estiver em uso ele avisa o usuário
+                        lblStatus.ForeColor = Color.Red;
                         lblStatus.Text = "Usuário já cadastrado";
                         txtUsu.Text = "";
                         txtSen.Text = "";
@@ -114,26 +115,26 @@ namespace SCSCONTABIL
 
         private void verificar_codigo()
         {
-            
+
             try
             {
 
                 //abrir conexao com BD
                 conexao.abrir();
                 Boolean lugar = false;
-                
+
                 while (lugar == false)
                 {
-                    
+
                     comando = "select * from usuario where UsuCod = " + codUsuarios;
                     //A variavel comando é mandada para execução no caminho declarado na classe conexao.
                     //Variavel que lerá os comandos de consulta do codigo
                     MySqlCommand consultaCod = new MySqlCommand(comando, conexao.con);
-                //É executado e lido o comando.
-                //APONTA ERRO NESSA LINHA ABAIXO 
-                using (MySqlDataReader readerCod = consultaCod.ExecuteReader())
+                    //É executado e lido o comando.
+                    //APONTA ERRO NESSA LINHA ABAIXO 
+                    using (MySqlDataReader readerCod = consultaCod.ExecuteReader())
                     {
-                    //verificar o primeiro lugar vago para cadastrar usuario
+                        //verificar o primeiro lugar vago para cadastrar usuario
                         //verificar se o codigo ja está em uso
                         if (readerCod.HasRows)
                         {   //se estiver em uso procura pelo proximo
@@ -149,6 +150,9 @@ namespace SCSCONTABIL
                         }
                     }
                 }
+            }catch (InvalidOperationException error)
+            {
+
             }catch (Exception erro)
             {
                 MessageBox.Show("Erro: " + erro.ToString(), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -167,6 +171,10 @@ namespace SCSCONTABIL
                 cadastroUsu.ExecuteNonQuery();
                 lblStatus.ForeColor = System.Drawing.Color.Green;
                 lblStatus.Text = "Usuario cadastrado com sucesso";
+                txtSen.Text = "";
+                txtUsu.Text = "";
+                cmbTipo.SelectedIndex = -1;
+                txtUsu.Focus();
                 conexao.fechar();
 
             }
