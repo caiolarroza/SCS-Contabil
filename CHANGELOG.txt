@@ -1,5 +1,8 @@
 Arquivo destinado a descrição das alterações feitas na versão.
 
+Versao 0.4
+Melhorias de segurança contra SQL Injection em todo o sistema
+
 Versao 0.3.1
 Arrumado bug da versao anterior no frmCadUsu
 

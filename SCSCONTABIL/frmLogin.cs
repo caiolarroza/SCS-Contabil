@@ -70,14 +70,13 @@ namespace SCSCONTABIL
                         buscaUser = user;
                         //Pega a senha digitada.
                         String senha = txtSenha.Text;
-                        //Seleciona todos os dados da tabela usuário onde o nome for igual ao digitado e a senha igual a digitada.
-                        String comando = "select * from usuario where UsuNom ='" + user + "' and UsuSen ='" + senha + "'";
-
                         //Abre a conexão com o banco de dados.
                         conexao.abrir();
-
-                        //A variavel comando é mandada para execução no caminho declarado na classe conexao.
-                        MySqlCommand comandos = new MySqlCommand(comando, conexao.con);
+                        //Seleciona todos os dados da tabela usuário onde o nome for igual ao digitado e a senha igual a digitada.
+                        MySqlCommand comandos = new MySqlCommand("select * from usuario where UsuNom = ?user and UsuSen = ?senha", conexao.con);
+                        //adiciona parametros ao comando String, evita problemas com SQL Inject
+                        comandos.Parameters.Add(new MySqlParameter("?user", user));
+                        comandos.Parameters.Add(new MySqlParameter("?senha", senha));
                         //É executado e lido o comando.
                         MySqlDataReader reader = comandos.ExecuteReader();
 
