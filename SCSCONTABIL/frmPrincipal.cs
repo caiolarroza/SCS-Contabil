@@ -30,9 +30,8 @@ namespace SCSCONTABIL
             //Instancia da classe frmLogin para pegar a informação do nome do usuario
             frmLogin login = new frmLogin();
             //busca tipo do usuario
-            String comando = "select UsuTip from usuario where UsuNom = '" + login.getUsuario() + "'";
-            //A variavel comando é mandada para execução no caminho declarado na classe conexao.
-            MySqlCommand comandos = new MySqlCommand(comando, conexao.con);
+            MySqlCommand comandos = new MySqlCommand("select UsuTip from usuario where UsuNom = ?usuario", conexao.con);
+            comandos.Parameters.Add(new MySqlParameter("?usuario", login.getUsuario()));
             //É executado e lido o comando.
             MySqlDataReader reader = comandos.ExecuteReader();
             String resultado = null;
