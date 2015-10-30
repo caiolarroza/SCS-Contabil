@@ -32,10 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.MaskedTextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.lblErro = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -70,21 +70,12 @@
             // 
             // txtUsuario
             // 
+            this.txtUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtUsuario.Location = new System.Drawing.Point(221, 151);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(261, 22);
-            this.txtUsuario.TabIndex = 3;
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Location = new System.Drawing.Point(221, 208);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(261, 22);
-            this.txtSenha.TabIndex = 4;
-            this.txtSenha.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyUp);
+            this.txtUsuario.TabIndex = 0;
             // 
             // btnEntrar
             // 
@@ -92,7 +83,7 @@
             this.btnEntrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(100, 28);
-            this.btnEntrar.TabIndex = 5;
+            this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
@@ -103,35 +94,47 @@
             this.btnSair.Margin = new System.Windows.Forms.Padding(4);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(100, 28);
-            this.btnSair.TabIndex = 6;
+            this.btnSair.TabIndex = 3;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // lblErro
+            // lblStatus
             // 
-            this.lblErro.AutoSize = true;
-            this.lblErro.ForeColor = System.Drawing.Color.Red;
-            this.lblErro.Location = new System.Drawing.Point(301, 238);
-            this.lblErro.Name = "lblErro";
-            this.lblErro.Size = new System.Drawing.Size(48, 17);
-            this.lblErro.TabIndex = 7;
-            this.lblErro.Text = "          ";
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.ForeColor = System.Drawing.Color.Red;
+            this.lblStatus.Location = new System.Drawing.Point(301, 238);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(48, 17);
+            this.lblStatus.TabIndex = 7;
+            this.lblStatus.Text = "          ";
+            this.lblStatus.SizeChanged += new System.EventHandler(this.lblErro_SizeChanged);
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtSenha.Location = new System.Drawing.Point(221, 207);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(261, 22);
+            this.txtSenha.TabIndex = 1;
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 401);
-            this.Controls.Add(this.lblErro);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
-            this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCSCONTABIL";
@@ -147,10 +150,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.MaskedTextBox txtSenha;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.Label lblErro;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.TextBox txtSenha;
     }
 }
 

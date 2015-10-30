@@ -31,7 +31,7 @@ namespace SCSCONTABIL
             frmPrincipal principal = new frmPrincipal();
             //mostra o form frmPrincipal e fecha esse
             principal.Show();
-            this.Hide();
+            this.Close();
         }
         
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -106,6 +106,12 @@ namespace SCSCONTABIL
             }
         }
 
+        private void lblStatus_SizeChanged(object sender, EventArgs e)
+        {
+            //centraliza o label conforme o form
+            lblStatus.Left = (this.ClientSize.Width - lblStatus.Size.Width) / 2;
+        }
+
         private void verificar_codigo()
         {
             try
@@ -135,13 +141,12 @@ namespace SCSCONTABIL
                             readerCod.Close();
                             //fechar conexao
                             conexao.fechar();
+                            lugar = true;
                             cadastrar();
                         }
                     }
                 }
-            }catch (InvalidOperationException error)
-            {
-
+            
             }catch (Exception erro)
             {
                 MessageBox.Show("Erro: " + erro.ToString(), "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -155,7 +160,7 @@ namespace SCSCONTABIL
                 conexao.abrir();
                 //Variavel com os comandos de consulta do codigo
                 MySqlCommand cadastroUsu = new MySqlCommand("insert into usuario values( ?codigo, ?usuario, ?senha , ?tipo)", conexao.con);
-                //adiciona parametros ao comando String, evita problemas com SQL Inject
+                //adiciona parametros ao comando, evita problemas com SQL Inject
                 cadastroUsu.Parameters.Add(new MySqlParameter("?codigo", codUsuarios));
                 cadastroUsu.Parameters.Add(new MySqlParameter("?usuario", usuario));
                 cadastroUsu.Parameters.Add(new MySqlParameter("?senha", senha));
@@ -163,7 +168,7 @@ namespace SCSCONTABIL
                 //Aqui é executado
                 cadastroUsu.ExecuteNonQuery();
                 //muda a cor do label para verde e avisa o usuario
-                lblStatus.ForeColor = System.Drawing.Color.Green;
+                lblStatus.ForeColor = Color.Green;
                 lblStatus.Text = "Usuario cadastrado com sucesso";
                 //limpa os campos e foca no txt de Usuario
                 txtSen.Text = "";

@@ -1,5 +1,11 @@
 Arquivo destinado a descrição das alterações feitas na versão.
 
+Versao 0.5
+Retirado campos TelDdi e EndPai, e tabela cliente do banco de dados
+Criado cadastro de fornecedor (frmCadFor)
+Adicionado padrao UPPERCASE para todos formularios do sistema
+Criação da classe de extensao 'Metodos de Extensao' para as maskedTextBox 
+
 Versao 0.4
 Melhorias de segurança contra SQL Injection em todo o sistema
 

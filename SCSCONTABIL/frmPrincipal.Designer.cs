@@ -66,6 +66,7 @@
             this.btnCadFor.TabIndex = 2;
             this.btnCadFor.Text = "Cadastrar Fornecedor";
             this.btnCadFor.UseVisualStyleBackColor = true;
+            this.btnCadFor.Click += new System.EventHandler(this.btnCadFor_Click);
             // 
             // btnCadPro
             // 
@@ -136,6 +137,7 @@
             this.Controls.Add(this.btnCadFor);
             this.Controls.Add(this.btnCadUsu);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";

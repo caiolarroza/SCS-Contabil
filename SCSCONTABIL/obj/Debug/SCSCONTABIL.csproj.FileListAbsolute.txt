@@ -30,3 +30,7 @@ F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmPrincipal.res
 F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.Properties.Resources.resources
 F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.csproj.GenerateResource.Cache
 F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmCadUsu.resources
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmCadFor.resources
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\bin\Debug\Correios.Net.dll
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\bin\Debug\Correios.Net.pdb
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmConProd.resources

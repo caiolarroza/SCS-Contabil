@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.9
+-- version 4.4.13.1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 08-Out-2015 às 13:27
--- Versão do servidor: 5.6.25
--- PHP Version: 5.4.41
+-- Generation Time: 30-Out-2015 às 22:51
+-- Versão do servidor: 5.6.26
+-- PHP Version: 5.5.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,23 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `scs`
 --
-CREATE DATABASE IF NOT EXISTS `scs` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `scs`;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `cliente`
---
-
-DROP TABLE IF EXISTS `cliente`;
-CREATE TABLE IF NOT EXISTS `cliente` (
-  `CliCod` int(11) NOT NULL,
-  `CliNom` varchar(30) NOT NULL,
-  `CliCpf` varchar(15) DEFAULT NULL,
-  `CliTel` int(11) DEFAULT NULL,
-  `CliEnd` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -43,7 +26,6 @@ CREATE TABLE IF NOT EXISTS `cliente` (
 -- Estrutura da tabela `endereco`
 --
 
-DROP TABLE IF EXISTS `endereco`;
 CREATE TABLE IF NOT EXISTS `endereco` (
   `EndCod` int(11) NOT NULL,
   `EndEnd` varchar(60) NOT NULL,
@@ -51,11 +33,16 @@ CREATE TABLE IF NOT EXISTS `endereco` (
   `EndCom` varchar(30) DEFAULT NULL,
   `EndBai` varchar(30) DEFAULT NULL,
   `EndMun` varchar(30) DEFAULT NULL,
-  `EndCid` varchar(30) DEFAULT NULL,
   `EndEst` char(2) DEFAULT NULL,
-  `EndCep` varchar(9) NOT NULL,
-  `EndPai` varchar(30) DEFAULT NULL
+  `EndCep` varchar(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `endereco`
+--
+
+INSERT INTO `endereco` (`EndCod`, `EndEnd`, `EndNum`, `EndCom`, `EndBai`, `EndMun`, `EndEst`, `EndCep`) VALUES
+(1, 'RUA DIAS DE ALMEIDA', '666', 'WHEY PROTEIN', 'JARDIM MIRIAM', 'SÃO PAULO', 'SP', '04419000');
 
 -- --------------------------------------------------------
 
@@ -63,7 +50,6 @@ CREATE TABLE IF NOT EXISTS `endereco` (
 -- Estrutura da tabela `fornecedor`
 --
 
-DROP TABLE IF EXISTS `fornecedor`;
 CREATE TABLE IF NOT EXISTS `fornecedor` (
   `ForCod` int(11) NOT NULL,
   `ForRaz` varchar(40) NOT NULL,
@@ -75,13 +61,19 @@ CREATE TABLE IF NOT EXISTS `fornecedor` (
   `ForEnd` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `fornecedor`
+--
+
+INSERT INTO `fornecedor` (`ForCod`, `ForRaz`, `ForNom`, `ForCnp`, `ForImu`, `ForIes`, `ForTel`, `ForEnd`) VALUES
+(1, 'MONSTRÃO', 'SWEET POTATO', '66666666666666', '66666', '666666666666', 1, 1);
+
 -- --------------------------------------------------------
 
 --
 -- Estrutura da tabela `produto`
 --
 
-DROP TABLE IF EXISTS `produto`;
 CREATE TABLE IF NOT EXISTS `produto` (
   `ProCod` int(11) NOT NULL,
   `ProNom` varchar(40) DEFAULT NULL,
@@ -97,13 +89,18 @@ CREATE TABLE IF NOT EXISTS `produto` (
 -- Estrutura da tabela `telefone`
 --
 
-DROP TABLE IF EXISTS `telefone`;
 CREATE TABLE IF NOT EXISTS `telefone` (
   `TelCod` int(11) NOT NULL,
-  `TelDdi` varchar(4) DEFAULT NULL,
   `TelDdd` varchar(4) DEFAULT NULL,
   `TelNum` varchar(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `telefone`
+--
+
+INSERT INTO `telefone` (`TelCod`, `TelDdd`, `TelNum`) VALUES
+(1, '11', '69696669');
 
 -- --------------------------------------------------------
 
@@ -111,7 +108,6 @@ CREATE TABLE IF NOT EXISTS `telefone` (
 -- Estrutura da tabela `usuario`
 --
 
-DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE IF NOT EXISTS `usuario` (
   `UsuCod` int(11) NOT NULL,
   `UsuNom` varchar(40) NOT NULL,
@@ -124,7 +120,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 --
 
 INSERT INTO `usuario` (`UsuCod`, `UsuNom`, `UsuSen`, `UsuTip`) VALUES
-(1, 'adm', '123', 'A');
+(1, 'ADM', '123', 'A');
 
 -- --------------------------------------------------------
 
@@ -132,7 +128,6 @@ INSERT INTO `usuario` (`UsuCod`, `UsuNom`, `UsuSen`, `UsuTip`) VALUES
 -- Estrutura da tabela `venda`
 --
 
-DROP TABLE IF EXISTS `venda`;
 CREATE TABLE IF NOT EXISTS `venda` (
   `VenCod` int(11) NOT NULL,
   `VenPro` int(11) DEFAULT NULL,
@@ -147,14 +142,6 @@ CREATE TABLE IF NOT EXISTS `venda` (
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `cliente`
---
-ALTER TABLE `cliente`
-  ADD PRIMARY KEY (`CliCod`),
-  ADD KEY `CliEnd` (`CliEnd`),
-  ADD KEY `CliTel` (`CliTel`);
 
 --
 -- Indexes for table `endereco`
@@ -214,13 +201,6 @@ ALTER TABLE `venda`
 --
 -- Constraints for dumped tables
 --
-
---
--- Limitadores para a tabela `cliente`
---
-ALTER TABLE `cliente`
-  ADD CONSTRAINT `cliente_ibfk_1` FOREIGN KEY (`CliEnd`) REFERENCES `endereco` (`EndCod`),
-  ADD CONSTRAINT `cliente_ibfk_2` FOREIGN KEY (`CliTel`) REFERENCES `telefone` (`TelCod`);
 
 --
 -- Limitadores para a tabela `fornecedor`
