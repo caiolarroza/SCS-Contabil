@@ -43,7 +43,7 @@ namespace SCSCONTABIL
             if (txtUsuario.Text.Equals(""))
             {
                 //Manda uma mensagem ao usuário.
-                lblErro.Text = "Digite o usuário";
+                lblStatus.Text = "Digite o usuário";
                 //Seta o foco no textbox Usuario.
                 txtUsuario.Focus();
             }
@@ -53,7 +53,7 @@ namespace SCSCONTABIL
                 if (txtSenha.Text.Equals(""))
                 {
                     //Manda uma mensagem ao usuário.
-                    lblErro.Text = "Digite a senha";
+                    lblStatus.Text = "Digite a senha";
                     //Seta o foco no textbox Senha.
                     txtSenha.Focus();
                 }
@@ -74,7 +74,7 @@ namespace SCSCONTABIL
                         conexao.abrir();
                         //Seleciona todos os dados da tabela usuário onde o nome for igual ao digitado e a senha igual a digitada.
                         MySqlCommand comandos = new MySqlCommand("select * from usuario where UsuNom = ?user and UsuSen = ?senha", conexao.con);
-                        //adiciona parametros ao comando String, evita problemas com SQL Inject
+                        //adiciona parametros ao comando, evita problemas com SQL Inject
                         comandos.Parameters.Add(new MySqlParameter("?user", user));
                         comandos.Parameters.Add(new MySqlParameter("?senha", senha));
                         //É executado e lido o comando.
@@ -93,7 +93,7 @@ namespace SCSCONTABIL
                         else
                         {
                             //Se não existirem dados, é mandado uma mensagem.
-                            lblErro.Text = "Informações Incorretas";
+                            lblStatus.Text = "Informações Incorretas";
                             //Os campos de senha e usuario ficam vazios:
                             txtUsuario.Text = "";
                             txtSenha.Text = "";
@@ -123,6 +123,12 @@ namespace SCSCONTABIL
         public string getUsuario()
         {
             return buscaUser;
+        }
+
+        private void lblErro_SizeChanged(object sender, EventArgs e)
+        {
+            //centraliza o label conforme o form
+            lblStatus.Left = (this.ClientSize.Width - lblStatus.Size.Width) / 2;
         }
     }
 }

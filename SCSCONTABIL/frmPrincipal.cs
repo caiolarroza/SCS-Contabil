@@ -64,5 +64,14 @@ namespace SCSCONTABIL
             CadUsu.Show();
             this.Hide();
         }
+
+        private void btnCadFor_Click(object sender, EventArgs e)
+        {   //Instancia do form frmCadFor
+            frmCadFor cadfor = new frmCadFor();
+            //mostra o form frmCadFor e fecha esse
+            cadfor.Show();
+            this.Hide();
+
+        }
     }
 }
