@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 30-Out-2015 às 22:51
+-- Generation Time: 02-Nov-2015 às 01:18
 -- Versão do servidor: 5.6.26
 -- PHP Version: 5.5.28
 
@@ -79,9 +79,9 @@ CREATE TABLE IF NOT EXISTS `produto` (
   `ProNom` varchar(40) DEFAULT NULL,
   `ProFor` int(11) DEFAULT NULL,
   `ProPco` decimal(9,2) DEFAULT NULL,
-  `ProPve` decimal(9,2) DEFAULT NULL,
-  `ProDat` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ProDat` date DEFAULT NULL,
+  `ProQtd` int(11) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -120,7 +120,9 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 --
 
 INSERT INTO `usuario` (`UsuCod`, `UsuNom`, `UsuSen`, `UsuTip`) VALUES
-(1, 'ADM', '123', 'A');
+(1, 'ADM', '123', 'A'),
+(2, 'ASD', 'ASD', 'A'),
+(3, 'QWE', 'QWE', 'B');
 
 -- --------------------------------------------------------
 
@@ -192,7 +194,7 @@ ALTER TABLE `venda`
 -- AUTO_INCREMENT for table `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `ProCod` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ProCod` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `venda`
 --

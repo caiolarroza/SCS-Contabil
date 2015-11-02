@@ -34,3 +34,4 @@ F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmCadFor.resour
 F:\FATEC\2º Semestre\projeto\SCSCONTABIL\bin\Debug\Correios.Net.dll
 F:\FATEC\2º Semestre\projeto\SCSCONTABIL\bin\Debug\Correios.Net.pdb
 F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmConProd.resources
+F:\FATEC\2º Semestre\projeto\SCSCONTABIL\obj\Debug\SCSCONTABIL.frmCadPro.resources

@@ -56,6 +56,12 @@
     <Compile Include="frmCadFor.Designer.cs">
       <DependentUpon>frmCadFor.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPro.Designer.cs">
+      <DependentUpon>frmCadPro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadUsu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCadFor.resx">
       <DependentUpon>frmCadFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPro.resx">
+      <DependentUpon>frmCadPro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadUsu.resx">
       <DependentUpon>frmCadUsu.cs</DependentUpon>

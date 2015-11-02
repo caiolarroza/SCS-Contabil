@@ -108,7 +108,7 @@
             this.lblStatus.Size = new System.Drawing.Size(48, 17);
             this.lblStatus.TabIndex = 7;
             this.lblStatus.Text = "          ";
-            this.lblStatus.SizeChanged += new System.EventHandler(this.lblErro_SizeChanged);
+            this.lblStatus.SizeChanged += new System.EventHandler(this.lblStatus_SizeChanged);
             // 
             // txtSenha
             // 
@@ -119,6 +119,7 @@
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(261, 22);
             this.txtSenha.TabIndex = 1;
+            this.txtSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSenha_KeyPress);
             // 
             // frmLogin
             // 
@@ -133,6 +134,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmLogin";

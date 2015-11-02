@@ -62,7 +62,7 @@ namespace SCSCONTABIL
             frmCadUsu CadUsu = new frmCadUsu();
             //mostra o form frmCadUsu e fecha esse
             CadUsu.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btnCadFor_Click(object sender, EventArgs e)
@@ -70,8 +70,17 @@ namespace SCSCONTABIL
             frmCadFor cadfor = new frmCadFor();
             //mostra o form frmCadFor e fecha esse
             cadfor.Show();
-            this.Hide();
+            this.Close();
 
+        }
+
+        private void btnCadPro_Click(object sender, EventArgs e)
+        {
+            //Instância da classe frmCadPro
+            frmCadPro cadpro = new frmCadPro();
+            //mostra o form frmCadPro e fecha esse
+            cadpro.Show();
+            this.Close();
         }
     }
 }
