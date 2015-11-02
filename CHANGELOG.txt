@@ -1,5 +1,10 @@
 Arquivo destinado a descrição das alterações feitas na versão.
 
+Versao 0.6
+Criado cadastro de produtos (frmCadPro)
+Retirado campo ProPve da tabela produtos do banco de dados
+Adicionado campo ProQtd na tabela produtos do banco de dados
+
 Versao 0.5
 Retirado campos TelDdi e EndPai, e tabela cliente do banco de dados
 Criado cadastro de fornecedor (frmCadFor)

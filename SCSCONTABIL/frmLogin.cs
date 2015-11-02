@@ -104,31 +104,33 @@ namespace SCSCONTABIL
                     catch (Exception erro)
                     {
                         //Se algum erro ocorrer é mandado esta mensagem e a conexao com o banco de dados se fecha.
-                        MessageBox.Show("Erro: " + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        lblStatus.Text = erro.Message;
                         conexao.fechar();
                     }
                 }
             }
         }
 
-        private void txtSenha_KeyUp(object sender, KeyEventArgs e)
-        {
-            //Quando o usuário apertar enter no campo senha é chamado o método "efetuar_login".
-            if (e.KeyCode == Keys.Enter)
-            {
-                efetuar_login();
-            }
-        }
+        
 
         public string getUsuario()
         {
             return buscaUser;
         }
 
-        private void lblErro_SizeChanged(object sender, EventArgs e)
+        private void lblStatus_SizeChanged(object sender, EventArgs e)
         {
             //centraliza o label conforme o form
             lblStatus.Left = (this.ClientSize.Width - lblStatus.Size.Width) / 2;
+        }
+
+        private void txtSenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Quando o usuário apertar enter no campo senha é chamado o método "efetuar_login".
+            if (e.KeyChar == (char)13)
+            {
+                efetuar_login();
+            }
         }
     }
 }

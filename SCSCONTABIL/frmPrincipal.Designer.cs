@@ -76,6 +76,7 @@
             this.btnCadPro.TabIndex = 3;
             this.btnCadPro.Text = "Cadastrar Produto";
             this.btnCadPro.UseVisualStyleBackColor = true;
+            this.btnCadPro.Click += new System.EventHandler(this.btnCadPro_Click);
             // 
             // btnConPro
             // 
@@ -137,6 +138,7 @@
             this.Controls.Add(this.btnCadFor);
             this.Controls.Add(this.btnCadUsu);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
