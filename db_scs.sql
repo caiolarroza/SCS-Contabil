@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 02-Nov-2015 às 01:18
+-- Generation Time: 10-Nov-2015 às 00:11
 -- Versão do servidor: 5.6.26
 -- PHP Version: 5.5.28
 
@@ -42,7 +42,9 @@ CREATE TABLE IF NOT EXISTS `endereco` (
 --
 
 INSERT INTO `endereco` (`EndCod`, `EndEnd`, `EndNum`, `EndCom`, `EndBai`, `EndMun`, `EndEst`, `EndCep`) VALUES
-(1, 'RUA DIAS DE ALMEIDA', '666', 'WHEY PROTEIN', 'JARDIM MIRIAM', 'SÃO PAULO', 'SP', '04419000');
+(1, 'RUA DIAS DE ALMEIDA', '666', 'WHEY PROTEIN', 'JARDIM MIRIAM', 'SÃO PAULO', 'SP', '04419000'),
+(2, 'SUA MAE', '666', 'AQUELA VACA', 'BORDEL', 'VILA DO SAPO', 'SP', '04256177'),
+(3, 'DASD11', '11', '1231', '123', '123', '13', '04475440');
 
 -- --------------------------------------------------------
 
@@ -66,7 +68,9 @@ CREATE TABLE IF NOT EXISTS `fornecedor` (
 --
 
 INSERT INTO `fornecedor` (`ForCod`, `ForRaz`, `ForNom`, `ForCnp`, `ForImu`, `ForIes`, `ForTel`, `ForEnd`) VALUES
-(1, 'MONSTRÃO', 'SWEET POTATO', '66666666666666', '66666', '666666666666', 1, 1);
+(1, 'MONSTRÃO', 'SWEET POTATO', '66666666666666', '66666', '666666666666', 1, 1),
+(2, 'QWE', 'ASD', '12345678912345', '12345', '123456789012', 2, 2),
+(3, 'SD', 'DDD', '11111111111111', '22222', '333333333333', 3, 3);
 
 -- --------------------------------------------------------
 
@@ -78,10 +82,19 @@ CREATE TABLE IF NOT EXISTS `produto` (
   `ProCod` int(11) NOT NULL,
   `ProNom` varchar(40) DEFAULT NULL,
   `ProFor` int(11) DEFAULT NULL,
-  `ProPco` decimal(9,2) DEFAULT NULL,
+  `ProPco` decimal(15,2) DEFAULT NULL,
   `ProDat` date DEFAULT NULL,
   `ProQtd` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `produto`
+--
+
+INSERT INTO `produto` (`ProCod`, `ProNom`, `ProFor`, `ProPco`, `ProDat`, `ProQtd`) VALUES
+(1, 'BATATA', 1, '1500.00', '2015-11-09', 7),
+(3, 'WHEY DO MONSTRO 500G BAUNILHA', 1, '150.00', '2015-11-06', 10000),
+(4, 'PAÇOCA', 3, '0.99', '2015-11-09', 8);
 
 -- --------------------------------------------------------
 
@@ -100,7 +113,9 @@ CREATE TABLE IF NOT EXISTS `telefone` (
 --
 
 INSERT INTO `telefone` (`TelCod`, `TelDdd`, `TelNum`) VALUES
-(1, '11', '69696669');
+(1, '11', '69696669'),
+(2, '11', '12345678'),
+(3, '11', '56725105');
 
 -- --------------------------------------------------------
 
@@ -122,7 +137,9 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 INSERT INTO `usuario` (`UsuCod`, `UsuNom`, `UsuSen`, `UsuTip`) VALUES
 (1, 'ADM', '123', 'A'),
 (2, 'ASD', 'ASD', 'A'),
-(3, 'QWE', 'QWE', 'B');
+(3, 'QWE', 'QWE', 'B'),
+(4, 'ADOLF', '123', 'A'),
+(5, 'DANILO', 'DANILO', 'A');
 
 -- --------------------------------------------------------
 
@@ -194,7 +211,7 @@ ALTER TABLE `venda`
 -- AUTO_INCREMENT for table `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `ProCod` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `ProCod` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `venda`
 --

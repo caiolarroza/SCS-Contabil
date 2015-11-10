@@ -262,6 +262,11 @@ namespace SCSCONTABIL
                 lblStatus.Text = "Produto cadastrado com sucesso!";
                 limpar();
                 txtCnpj.Focus();
+            }catch(MySqlException erro) {
+                //caso de erro na quantidade de digitos do preço
+                lblStatus.ForeColor = Color.Red;
+                lblStatus.Text = "Preço invalido";
+                conexao.fechar();
             }
             catch (Exception erro)
             {

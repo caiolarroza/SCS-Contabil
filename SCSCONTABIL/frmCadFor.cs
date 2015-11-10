@@ -30,7 +30,8 @@ namespace SCSCONTABIL
                 //uso da API Correios.Net
                 //https://github.com/hamboldt/Correios.Net
                 //Faz a pesquisa na base de dados dos correios usando o cep
-                Address address = SearchZip.GetAddress(cep);
+                Address address = SearchZip.GetAddress(cep, 5000);
+
                 if (address.Street != "Não encontrado")
                 {
                     lblStatus.ForeColor = Color.Green;
