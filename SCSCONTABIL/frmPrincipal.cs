@@ -82,5 +82,14 @@ namespace SCSCONTABIL
             cadpro.Show();
             this.Close();
         }
+
+        private void btnConPro_Click(object sender, EventArgs e)
+        {
+            //Instância da classe frmCadPro
+            frmConProd conpro = new frmConProd();
+            //mostra o form frmCadPro e fecha esse
+            conpro.Show();
+            this.Close();
+        }
     }
 }
