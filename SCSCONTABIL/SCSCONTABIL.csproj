@@ -71,11 +71,17 @@
     <Compile Include="frmCadUsu.Designer.cs">
       <DependentUpon>frmCadUsu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConProd.cs">
+    <Compile Include="frmConFor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConProd.Designer.cs">
-      <DependentUpon>frmConProd.cs</DependentUpon>
+    <Compile Include="frmConFor.Designer.cs">
+      <DependentUpon>frmConFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConPro.Designer.cs">
+      <DependentUpon>frmConPro.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -101,8 +107,11 @@
     <EmbeddedResource Include="frmCadUsu.resx">
       <DependentUpon>frmCadUsu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConProd.resx">
-      <DependentUpon>frmConProd.cs</DependentUpon>
+    <EmbeddedResource Include="frmConFor.resx">
+      <DependentUpon>frmConFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConPro.resx">
+      <DependentUpon>frmConPro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
