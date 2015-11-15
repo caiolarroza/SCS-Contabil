@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 10-Nov-2015 às 00:11
+-- Generation Time: 14-Nov-2015 às 19:22
 -- Versão do servidor: 5.6.26
 -- PHP Version: 5.5.28
 
@@ -93,8 +93,7 @@ CREATE TABLE IF NOT EXISTS `produto` (
 
 INSERT INTO `produto` (`ProCod`, `ProNom`, `ProFor`, `ProPco`, `ProDat`, `ProQtd`) VALUES
 (1, 'BATATA', 1, '1500.00', '2015-11-09', 7),
-(3, 'WHEY DO MONSTRO 500G BAUNILHA', 1, '150.00', '2015-11-06', 10000),
-(4, 'PAÇOCA', 3, '0.99', '2015-11-09', 8);
+(3, 'WHEY DO MONSTRO 1KG BAUNILHA', 1, '150.00', '2015-11-06', 10000);
 
 -- --------------------------------------------------------
 
@@ -150,7 +149,6 @@ INSERT INTO `usuario` (`UsuCod`, `UsuNom`, `UsuSen`, `UsuTip`) VALUES
 CREATE TABLE IF NOT EXISTS `venda` (
   `VenCod` int(11) NOT NULL,
   `VenPro` int(11) DEFAULT NULL,
-  `VenCli` int(11) DEFAULT NULL,
   `VenQtd` int(11) DEFAULT NULL,
   `VenVal` decimal(9,2) DEFAULT NULL,
   `VenVfr` decimal(9,2) DEFAULT NULL,
@@ -200,8 +198,7 @@ ALTER TABLE `usuario`
 --
 ALTER TABLE `venda`
   ADD PRIMARY KEY (`VenCod`),
-  ADD KEY `VenPro` (`VenPro`),
-  ADD KEY `VenCli` (`VenCli`);
+  ADD KEY `VenPro` (`VenPro`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -238,8 +235,7 @@ ALTER TABLE `produto`
 -- Limitadores para a tabela `venda`
 --
 ALTER TABLE `venda`
-  ADD CONSTRAINT `venda_ibfk_1` FOREIGN KEY (`VenPro`) REFERENCES `produto` (`ProCod`),
-  ADD CONSTRAINT `venda_ibfk_2` FOREIGN KEY (`VenCli`) REFERENCES `cliente` (`CliCod`);
+  ADD CONSTRAINT `venda_ibfk_1` FOREIGN KEY (`VenPro`) REFERENCES `produto` (`ProCod`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

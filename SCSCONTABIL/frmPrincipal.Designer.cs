@@ -96,6 +96,7 @@
             this.btnConFor.TabIndex = 6;
             this.btnConFor.Text = "Consultar Fornecedor";
             this.btnConFor.UseVisualStyleBackColor = true;
+            this.btnConFor.Click += new System.EventHandler(this.btnConFor_Click);
             // 
             // btnConUsu
             // 

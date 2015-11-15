@@ -23,48 +23,7 @@ namespace SCSCONTABIL
 
         
 
-        public void busca(string cep)
-        {
-            try {
-
-                //uso da API Correios.Net
-                //https://github.com/hamboldt/Correios.Net
-                //Faz a pesquisa na base de dados dos correios usando o cep
-                Address address = SearchZip.GetAddress(cep, 5000);
-
-                if (address.Street != "Não encontrado")
-                {
-                    lblStatus.ForeColor = Color.Green;
-                    lblStatus.Text = "";
-                    //atribuir a informação aos campos
-                    txtEnd.Text = address.Street;
-                    txtBai.Text = address.District;
-                    txtMun.Text = address.City;
-                    txtEst.Text = address.State;
-                    txtNumEnd.Focus();
-                }
-                else
-                {
-                    lblStatus.ForeColor = Color.Red;
-                    lblStatus.Text = "CEP Invalido";
-                    txtCep.Text = "";
-                    txtCep.Focus();
-
-                }
-            } catch (System.Net.WebException erro)
-            {
-                //esse catch será executado especificamente quando não tiver conexão com a web
-                lblStatus.ForeColor = Color.Red;
-                lblStatus.Text = "Impossivel pesquisar enquanto offline. Preencha os dados manualmente";
-            }
-            catch (Exception e)
-            {
-                //catch genérico 
-                lblStatus.ForeColor = Color.Red;
-                lblStatus.Text = e.Message;
-            }
-
-        }
+        
 
         private void btnCep_Click(object sender, EventArgs e)
         {
@@ -97,7 +56,7 @@ namespace SCSCONTABIL
 
         private void txtCnpj_Click(object sender, EventArgs e)
         {
-            if (txtCnpj.Text.Equals(""))
+            if (txtCnpj.semFormato().Equals(""))
             {
                 //faz o masked textbox iniciar sempre no primeiro caracter
                 txtCnpj.SelectionStart = 0;
@@ -190,6 +149,52 @@ namespace SCSCONTABIL
                 consultar_CNPJ();
 
             }
+        }
+
+
+        public void busca(string cep)
+        {
+            try
+            {
+
+                //uso da API Correios.Net
+                //https://github.com/hamboldt/Correios.Net
+                //Faz a pesquisa na base de dados dos correios usando o cep
+                Address address = SearchZip.GetAddress(cep, 5000);
+
+                if (address.Street != "Não encontrado")
+                {
+                    lblStatus.ForeColor = Color.Green;
+                    lblStatus.Text = "";
+                    //atribuir a informação aos campos
+                    txtEnd.Text = address.Street;
+                    txtBai.Text = address.District;
+                    txtMun.Text = address.City;
+                    txtEst.Text = address.State;
+                    txtNumEnd.Focus();
+                }
+                else
+                {
+                    lblStatus.ForeColor = Color.Red;
+                    lblStatus.Text = "CEP Invalido";
+                    txtCep.Text = "";
+                    txtCep.Focus();
+
+                }
+            }
+            catch (System.Net.WebException erro)
+            {
+                //esse catch será executado especificamente quando não tiver conexão com a web
+                lblStatus.ForeColor = Color.Red;
+                lblStatus.Text = "Impossivel pesquisar enquanto offline. Preencha os dados manualmente";
+            }
+            catch (Exception e)
+            {
+                //catch genérico 
+                lblStatus.ForeColor = Color.Red;
+                lblStatus.Text = e.Message;
+            }
+
         }
 
         private void consultar_CNPJ()

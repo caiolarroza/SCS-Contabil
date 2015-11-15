@@ -11,10 +11,10 @@ using MySql.Data.MySqlClient;
 
 namespace SCSCONTABIL
 {
-    public partial class frmConProd : Form
+    public partial class frmConPro : Form
     {
         Conexao conexao = new Conexao();
-        public frmConProd()
+        public frmConPro()
         {
             InitializeComponent();
         }
@@ -265,7 +265,7 @@ namespace SCSCONTABIL
             {
                 lblStatus.ForeColor = Color.Red;
                 lblStatus.Text = erro.Message;
-                MessageBox.Show(erro.ToString());
+                
             }
         }
 
@@ -289,7 +289,11 @@ namespace SCSCONTABIL
             conexao.fechar();
         }
 
-        
+        private void lblStatus_TextChanged(object sender, EventArgs e)
+        {
+            //centraliza o label
+            lblStatus.Left = (this.ClientSize.Width - lblStatus.Size.Width) / 5;
+        }
     }
 }
 

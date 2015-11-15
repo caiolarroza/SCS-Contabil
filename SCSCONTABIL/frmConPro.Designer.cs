@@ -1,6 +1,6 @@
 ﻿namespace SCSCONTABIL
 {
-    partial class frmConProd
+    partial class frmConPro
     {
         /// <summary>
         /// Required designer variable.
@@ -74,6 +74,7 @@
             this.lblStatus.Size = new System.Drawing.Size(32, 17);
             this.lblStatus.TabIndex = 11;
             this.lblStatus.Text = "      ";
+            this.lblStatus.TextChanged += new System.EventHandler(this.lblStatus_TextChanged);
             // 
             // groupBox2
             // 
@@ -400,7 +401,7 @@
             this.btnDel.UseVisualStyleBackColor = true;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
-            // frmConProd
+            // frmConPro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -418,7 +419,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "frmConProd";
+            this.Name = "frmConPro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConProd";
             this.Load += new System.EventHandler(this.frmConProd_Load);

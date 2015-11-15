@@ -1,5 +1,9 @@
 Arquivo destinado a descrição das alterações feitas na versão.
 
+Versao 0.8
+Criado a consulta de fornecedores (frmConFor)
+Retirado campo VenCli da tabela venda do BD
+
 Versao 0.7
 Criado a consulta de produtos (frmConPro)
 Alteração de tamanho do campo ProPco na tabela produto do banco de dados
