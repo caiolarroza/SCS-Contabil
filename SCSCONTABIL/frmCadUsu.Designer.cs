@@ -50,7 +50,9 @@
             // 
             // txtUsu
             // 
+            this.txtUsu.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtUsu.Location = new System.Drawing.Point(79, 46);
+            this.txtUsu.MaxLength = 40;
             this.txtUsu.Name = "txtUsu";
             this.txtUsu.Size = new System.Drawing.Size(272, 22);
             this.txtUsu.TabIndex = 1;
@@ -58,7 +60,9 @@
             // 
             // txtSen
             // 
+            this.txtSen.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSen.Location = new System.Drawing.Point(79, 74);
+            this.txtSen.MaxLength = 25;
             this.txtSen.Name = "txtSen";
             this.txtSen.PasswordChar = '*';
             this.txtSen.Size = new System.Drawing.Size(272, 22);
@@ -124,6 +128,7 @@
             this.lblStatus.Size = new System.Drawing.Size(52, 17);
             this.lblStatus.TabIndex = 8;
             this.lblStatus.Text = "           ";
+            this.lblStatus.SizeChanged += new System.EventHandler(this.lblStatus_SizeChanged);
             // 
             // frmCadUsu
             // 
@@ -139,6 +144,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUsu);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmCadUsu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Usuários";

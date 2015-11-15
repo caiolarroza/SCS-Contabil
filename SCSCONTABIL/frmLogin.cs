@@ -43,7 +43,7 @@ namespace SCSCONTABIL
             if (txtUsuario.Text.Equals(""))
             {
                 //Manda uma mensagem ao usuário.
-                MessageBox.Show("Digite o usuário.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                lblStatus.Text = "Digite o usuário";
                 //Seta o foco no textbox Usuario.
                 txtUsuario.Focus();
             }
@@ -53,7 +53,7 @@ namespace SCSCONTABIL
                 if (txtSenha.Text.Equals(""))
                 {
                     //Manda uma mensagem ao usuário.
-                    MessageBox.Show("Digite a senha.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    lblStatus.Text = "Digite a senha";
                     //Seta o foco no textbox Senha.
                     txtSenha.Focus();
                 }
@@ -70,14 +70,13 @@ namespace SCSCONTABIL
                         buscaUser = user;
                         //Pega a senha digitada.
                         String senha = txtSenha.Text;
-                        //Seleciona todos os dados da tabela usuário onde o nome for igual ao digitado e a senha igual a digitada.
-                        String comando = "select * from usuario where UsuNom ='" + user + "' and UsuSen ='" + senha + "'";
-
                         //Abre a conexão com o banco de dados.
                         conexao.abrir();
-
-                        //A variavel comando é mandada para execução no caminho declarado na classe conexao.
-                        MySqlCommand comandos = new MySqlCommand(comando, conexao.con);
+                        //Seleciona todos os dados da tabela usuário onde o nome for igual ao digitado e a senha igual a digitada.
+                        MySqlCommand comandos = new MySqlCommand("select * from usuario where UsuNom = ?user and UsuSen = ?senha", conexao.con);
+                        //adiciona parametros ao comando, evita problemas com SQL Inject
+                        comandos.Parameters.Add(new MySqlParameter("?user", user));
+                        comandos.Parameters.Add(new MySqlParameter("?senha", senha));
                         //É executado e lido o comando.
                         MySqlDataReader reader = comandos.ExecuteReader();
 
@@ -94,7 +93,7 @@ namespace SCSCONTABIL
                         else
                         {
                             //Se não existirem dados, é mandado uma mensagem.
-                            lblErro.Text = "Informações Incorretas";
+                            lblStatus.Text = "Informações Incorretas";
                             //Os campos de senha e usuario ficam vazios:
                             txtUsuario.Text = "";
                             txtSenha.Text = "";
@@ -105,25 +104,33 @@ namespace SCSCONTABIL
                     catch (Exception erro)
                     {
                         //Se algum erro ocorrer é mandado esta mensagem e a conexao com o banco de dados se fecha.
-                        MessageBox.Show("Erro: " + erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        lblStatus.Text = erro.Message;
                         conexao.fechar();
                     }
                 }
             }
         }
 
-        private void txtSenha_KeyUp(object sender, KeyEventArgs e)
-        {
-            //Quando o usuário apertar enter no campo senha é chamado o método "efetuar_login".
-            if (e.KeyCode == Keys.Enter)
-            {
-                efetuar_login();
-            }
-        }
+        
 
         public string getUsuario()
         {
             return buscaUser;
+        }
+
+        private void lblStatus_SizeChanged(object sender, EventArgs e)
+        {
+            //centraliza o label conforme o form
+            lblStatus.Left = (this.ClientSize.Width - lblStatus.Size.Width) / 2;
+        }
+
+        private void txtSenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Quando o usuário apertar enter no campo senha é chamado o método "efetuar_login".
+            if (e.KeyChar == (char)13)
+            {
+                efetuar_login();
+            }
         }
     }
 }

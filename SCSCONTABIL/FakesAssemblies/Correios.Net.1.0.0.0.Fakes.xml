@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Correios.Net.1.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Correios.Net.Fakes.ShimAddress">
+            <summary>Tipo de correção de Correios.Net.Address</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.ShimAddress.#ctor">
+            <summary>Inicializa uma nova instância de correção</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.ShimAddress.#ctor(Correios.Net.Address)">
+            <summary>Inicializa uma nova correção para a instância determinada</summary>
+        </member>
+        <member name="T:Correios.Net.Fakes.ShimAddress.AllInstances">
+            <summary>Definir shims para todos os membros de instâncias</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.CityGet">
+            <summary>Define correção de Address.get_City()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.CitySetString">
+            <summary>Define correção de Address.set_City(String value)</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.DistrictGet">
+            <summary>Define correção de Address.get_District()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.DistrictSetString">
+            <summary>Define correção de Address.set_District(String value)</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.StateGet">
+            <summary>Define correção de Address.get_State()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.StateSetString">
+            <summary>Define correção de Address.set_State(String value)</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.StreetGet">
+            <summary>Define correção de Address.get_Street()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.StreetSetString">
+            <summary>Define correção de Address.set_Street(String value)</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.UniqueZipGet">
+            <summary>Define correção de Address.get_UniqueZip()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.UniqueZipSetBoolean">
+            <summary>Define correção de Address.set_UniqueZip(Boolean value)</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.ZipGet">
+            <summary>Define correção de Address.get_Zip()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.AllInstances.ZipSetString">
+            <summary>Define correção de Address.set_Zip(String value)</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.ShimAddress.BehaveAsCurrent">
+            <summary>Atribui o comportamento &apos;Current&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.ShimAddress.BehaveAsNotImplemented">
+            <summary>Atribui o comportamento &apos;NotImplemented&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.Behavior">
+            <summary>Atribui o comportamento para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.CityGet">
+            <summary>Define correção de Address.get_City()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.CitySetString">
+            <summary>Define correção de Address.set_City(String value)</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.Constructor">
+            <summary>Define correção de Address.Address()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.DistrictGet">
+            <summary>Define correção de Address.get_District()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.DistrictSetString">
+            <summary>Define correção de Address.set_District(String value)</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.StateGet">
+            <summary>Define correção de Address.get_State()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.StateSetString">
+            <summary>Define correção de Address.set_State(String value)</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.StreetGet">
+            <summary>Define correção de Address.get_Street()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.StreetSetString">
+            <summary>Define correção de Address.set_Street(String value)</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.UniqueZipGet">
+            <summary>Define correção de Address.get_UniqueZip()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.UniqueZipSetBoolean">
+            <summary>Define correção de Address.set_UniqueZip(Boolean value)</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.ZipGet">
+            <summary>Define correção de Address.get_Zip()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimAddress.ZipSetString">
+            <summary>Define correção de Address.set_Zip(String value)</summary>
+        </member>
+        <member name="T:Correios.Net.Fakes.ShimSearchZip">
+            <summary>Tipo de correção de Correios.Net.SearchZip</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.ShimSearchZip.#ctor">
+            <summary>Inicializa uma nova instância de correção</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.ShimSearchZip.#ctor(Correios.Net.SearchZip)">
+            <summary>Inicializa uma nova correção para a instância determinada</summary>
+        </member>
+        <member name="T:Correios.Net.Fakes.ShimSearchZip.AllInstances">
+            <summary>Definir shims para todos os membros de instâncias</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.ShimSearchZip.BehaveAsCurrent">
+            <summary>Atribui o comportamento &apos;Current&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.ShimSearchZip.BehaveAsNotImplemented">
+            <summary>Atribui o comportamento &apos;NotImplemented&apos; para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimSearchZip.Behavior">
+            <summary>Atribui o comportamento para todos os métodos do tipo corrigido</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimSearchZip.Constructor">
+            <summary>Define correção de SearchZip.SearchZip()</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.ShimSearchZip.GetAddressStringInt32">
+            <summary>Define correção de SearchZip.GetAddress(String zip, Int32 timeout)</summary>
+        </member>
+        <member name="T:Correios.Net.Fakes.StubAddress">
+            <summary>Tipo stub de Correios.Net.Address</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.StubAddress.#ctor">
+            <summary>Inicializa uma nova instância</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.StubAddress.CallBase">
+            <summary>Obtém ou define um valor que indica se o método base deve ser chamado em vez do comportamento de fallback</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.StubAddress.InitializeStub">
+            <summary>Inicializa uma nova instância do type StubAddress</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.StubAddress.InstanceBehavior">
+            <summary>Obtém ou define o comportamento da instância.</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.StubAddress.InstanceObserver">
+            <summary>Obtém ou define o observador de instância.</summary>
+        </member>
+        <member name="T:Correios.Net.Fakes.StubSearchZip">
+            <summary>Tipo stub de Correios.Net.SearchZip</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.StubSearchZip.#ctor">
+            <summary>Inicializa uma nova instância</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.StubSearchZip.CallBase">
+            <summary>Obtém ou define um valor que indica se o método base deve ser chamado em vez do comportamento de fallback</summary>
+        </member>
+        <member name="M:Correios.Net.Fakes.StubSearchZip.InitializeStub">
+            <summary>Inicializa uma nova instância do type StubSearchZip</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.StubSearchZip.InstanceBehavior">
+            <summary>Obtém ou define o comportamento da instância.</summary>
+        </member>
+        <member name="P:Correios.Net.Fakes.StubSearchZip.InstanceObserver">
+            <summary>Obtém ou define o observador de instância.</summary>
+        </member>
+    </members>
+</doc>

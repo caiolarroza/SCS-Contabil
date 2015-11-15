@@ -32,6 +32,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Correios.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Correios.CEP.Net.1.1.6\lib\Correios.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,17 +53,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexao.cs" />
+    <Compile Include="frmCadFor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadFor.Designer.cs">
+      <DependentUpon>frmCadFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPro.Designer.cs">
+      <DependentUpon>frmCadPro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadUsu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCadUsu.Designer.cs">
       <DependentUpon>frmCadUsu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConProd.cs">
+    <Compile Include="frmConFor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConProd.Designer.cs">
-      <DependentUpon>frmConProd.cs</DependentUpon>
+    <Compile Include="frmConFor.Designer.cs">
+      <DependentUpon>frmConFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConPro.Designer.cs">
+      <DependentUpon>frmConPro.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -70,10 +95,23 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Metodos de Extensao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCadFor.resx">
+      <DependentUpon>frmCadFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPro.resx">
+      <DependentUpon>frmCadPro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadUsu.resx">
       <DependentUpon>frmCadUsu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConFor.resx">
+      <DependentUpon>frmConFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConPro.resx">
+      <DependentUpon>frmConPro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -90,6 +128,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

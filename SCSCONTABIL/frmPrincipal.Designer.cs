@@ -66,6 +66,7 @@
             this.btnCadFor.TabIndex = 2;
             this.btnCadFor.Text = "Cadastrar Fornecedor";
             this.btnCadFor.UseVisualStyleBackColor = true;
+            this.btnCadFor.Click += new System.EventHandler(this.btnCadFor_Click);
             // 
             // btnCadPro
             // 
@@ -75,6 +76,7 @@
             this.btnCadPro.TabIndex = 3;
             this.btnCadPro.Text = "Cadastrar Produto";
             this.btnCadPro.UseVisualStyleBackColor = true;
+            this.btnCadPro.Click += new System.EventHandler(this.btnCadPro_Click);
             // 
             // btnConPro
             // 
@@ -84,6 +86,7 @@
             this.btnConPro.TabIndex = 7;
             this.btnConPro.Text = "Consultar Produto";
             this.btnConPro.UseVisualStyleBackColor = true;
+            this.btnConPro.Click += new System.EventHandler(this.btnConPro_Click);
             // 
             // btnConFor
             // 
@@ -93,6 +96,7 @@
             this.btnConFor.TabIndex = 6;
             this.btnConFor.Text = "Consultar Fornecedor";
             this.btnConFor.UseVisualStyleBackColor = true;
+            this.btnConFor.Click += new System.EventHandler(this.btnConFor_Click);
             // 
             // btnConUsu
             // 
@@ -136,6 +140,8 @@
             this.Controls.Add(this.btnCadFor);
             this.Controls.Add(this.btnCadUsu);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";

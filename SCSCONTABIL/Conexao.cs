@@ -20,7 +20,7 @@ namespace SCSCONTABIL
             }
             catch (Exception erro)
             {
-                Console.WriteLine(erro.StackTrace);
+                Console.WriteLine(erro.ToString());
                 fechar();
             }
         }

@@ -30,9 +30,8 @@ namespace SCSCONTABIL
             //Instancia da classe frmLogin para pegar a informação do nome do usuario
             frmLogin login = new frmLogin();
             //busca tipo do usuario
-            String comando = "select UsuTip from usuario where UsuNom = '" + login.getUsuario() + "'";
-            //A variavel comando é mandada para execução no caminho declarado na classe conexao.
-            MySqlCommand comandos = new MySqlCommand(comando, conexao.con);
+            MySqlCommand comandos = new MySqlCommand("select UsuTip from usuario where UsuNom = ?usuario", conexao.con);
+            comandos.Parameters.Add(new MySqlParameter("?usuario", login.getUsuario()));
             //É executado e lido o comando.
             MySqlDataReader reader = comandos.ExecuteReader();
             String resultado = null;
@@ -63,7 +62,43 @@ namespace SCSCONTABIL
             frmCadUsu CadUsu = new frmCadUsu();
             //mostra o form frmCadUsu e fecha esse
             CadUsu.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void btnCadFor_Click(object sender, EventArgs e)
+        {   //Instancia do form frmCadFor
+            frmCadFor cadfor = new frmCadFor();
+            //mostra o form frmCadFor e fecha esse
+            cadfor.Show();
+            this.Close();
+
+        }
+
+        private void btnCadPro_Click(object sender, EventArgs e)
+        {
+            //Instância da classe frmCadPro
+            frmCadPro cadpro = new frmCadPro();
+            //mostra o form frmCadPro e fecha esse
+            cadpro.Show();
+            this.Close();
+        }
+
+        private void btnConPro_Click(object sender, EventArgs e)
+        {
+            //Instância da classe frmConPro
+            frmConPro conpro = new frmConPro();
+            //mostra o form frmConPro e fecha esse
+            conpro.Show();
+            this.Close();
+        }
+
+        private void btnConFor_Click(object sender, EventArgs e)
+        {
+            //Instância da classe frmConFor
+            frmConFor confor = new frmConFor();
+            //mostra o form frmConFor e fecha esse
+            confor.Show();
+            this.Close();
         }
     }
 }
