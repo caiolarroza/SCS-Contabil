@@ -1,1 +1,4 @@
 Pasta dedicada a documentação do projeto
+
+Formato ODT: formato open document, funciona com Office 2016 e LibreOffice. Recomendado para manter estabilidade
+Formato DOCX: formato XML proprietário da Microsoft, funciona no Office 2016 e LibreOffice. Não recomendado para manter compatibilidade.

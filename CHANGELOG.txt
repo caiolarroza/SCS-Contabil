@@ -1,6 +1,44 @@
 Arquivo destinado a descrição das alterações feitas na versão.
 
+Versao 0.8
+Criado a consulta de fornecedores (frmConFor)
+Retirado campo VenCli da tabela venda do BD
+
+Versao 0.7
+Criado a consulta de produtos (frmConPro)
+Alteração de tamanho do campo ProPco na tabela produto do banco de dados
+
+Versao 0.6
+Criado cadastro de produtos (frmCadPro)
+Retirado campo ProPve da tabela produtos do banco de dados
+Adicionado campo ProQtd na tabela produtos do banco de dados
+
+Versao 0.5
+Retirado campos TelDdi e EndPai, e tabela cliente do banco de dados
+Criado cadastro de fornecedor (frmCadFor)
+Adicionado padrao UPPERCASE para todos formularios do sistema
+Criação da classe de extensao 'Metodos de Extensao' para as maskedTextBox 
+
+Versao 0.4
+Melhorias de segurança contra SQL Injection em todo o sistema
+
+Versao 0.3.1
+Arrumado bug da versao anterior no frmCadUsu
+
+Versao 0.3
+Modificado frmPrincipal
+Criado bloqueio de opcoes por hierarquia do usuario no frmPrincipal, metodo testar_nivel()
+Retirado messagebox de login invalido de frmLogin e adicionado um label no lugar
+Cadastro de Usuario quase finalizado, bug na linha 134, porem, esta cadastrando
+
+Versao 0.2
+Criado frmPrincipal
+Feita a ligacao entre as telas
+Inclusao dos botoes para as telas de cadastros, exclusoes, consultas e para sair do sistema
+
 Versao 0.1
 Criado projeto C# base
 Criado arquivo CHANGELOG.txt
 Adicionado banco de dados db_scs.sql
+
+
