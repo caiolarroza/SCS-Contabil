@@ -1,4 +1,0 @@
-Testado na versão 0.8
--cadastro de usuario preenchido com espaços, tanto em usuario como em senha
--cadastro de fornecedor, ao preencher o campo com uma letra ou numero e o resto com espaços
--falta opção de logoff depois de logado
