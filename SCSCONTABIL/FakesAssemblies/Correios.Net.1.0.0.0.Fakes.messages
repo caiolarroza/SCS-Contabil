@@ -1,6 +1,0 @@
-F:\FATEC\2º Semestre\projeto\SCSCONTABIL\Fakes\Correios.Net.fakes : warning : Não é possível gerar stub para Correios.Net.Exceptions.InvalidArgumentException: o tipo não é visível para exported or assembly(Correios.Net.1.0.0.0.Fakes).
-F:\FATEC\2º Semestre\projeto\SCSCONTABIL\Fakes\Correios.Net.fakes : warning : Não é possível gerar stub para Correios.Net.Http.Request: o tipo não é visível para exported or assembly(Correios.Net.1.0.0.0.Fakes).
-F:\FATEC\2º Semestre\projeto\SCSCONTABIL\Fakes\Correios.Net.fakes : warning : Não é possível gerar stub para Correios.Net.Http.Response: o tipo não é visível para exported or assembly(Correios.Net.1.0.0.0.Fakes).
-F:\FATEC\2º Semestre\projeto\SCSCONTABIL\Fakes\Correios.Net.fakes : warning : Não é possível gerar correção para Correios.Net.Exceptions.InvalidArgumentException: o tipo não é visível para exported or assembly(Correios.Net.1.0.0.0.Fakes).
-F:\FATEC\2º Semestre\projeto\SCSCONTABIL\Fakes\Correios.Net.fakes : warning : Não é possível gerar correção para Correios.Net.Http.Request: o tipo não é visível para exported or assembly(Correios.Net.1.0.0.0.Fakes).
-F:\FATEC\2º Semestre\projeto\SCSCONTABIL\Fakes\Correios.Net.fakes : warning : Não é possível gerar correção para Correios.Net.Http.Response: o tipo não é visível para exported or assembly(Correios.Net.1.0.0.0.Fakes).
