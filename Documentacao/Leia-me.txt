@@ -1,4 +1,0 @@
-Pasta dedicada a documentação do projeto.
-
-Formato ODT: formato open document, funciona com Microsoft Office 2016 e LibreOffice. Recomendado para manter compatibilidade multiplataforma.
-Formato DOCX: formato XML proprietário da Microsoft, funciona no Microsoft Office 2016 e LibreOffice.

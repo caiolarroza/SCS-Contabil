@@ -1,0 +1,11 @@
+Pasta dedicada a documentação do projeto.
+
+Modelo: http://www.usjt.br/cursos/ftce/arquivos/2013/produto_software_v3r-05.pdf
+
+Formato ODT: formato open document, funciona com Microsoft Office 2016 e LibreOffice Writer. Recomendado para manter compatibilidade multiplataforma.
+
+Formato DOCX: formato XML proprietário da Microsoft, funciona no Microsoft Office 2016 e LibreOffice.
+
+Formato ODG: formato open design, para elaboração de diagramas. Funciona com LibreOffice Draw.
+
+Formato VSDX: formato proprietário da Microsoft para desenhos do Visio, funciona com Visio 2016 e versões anteriores.

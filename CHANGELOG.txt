@@ -1,6 +1,12 @@
 Arquivo destinado a descrição das alterações feitas na versão.
+Versao 0.9
+Sistema migrado de Windows Forms (Forms) para Windows Presentation Foundation (WPF)
+Criado tabela vendaUEPS
+Criado sistema de venda Peps e Ueps
+Criado consulta de usuarios
+Criada a opcao de logout do sistema
 
-Versao 0.8
+Versao 0.8 - Milestone
 Criado a consulta de fornecedores (frmConFor)
 Retirado campo VenCli da tabela venda do BD
 
@@ -36,7 +42,7 @@ Criado frmPrincipal
 Feita a ligacao entre as telas
 Inclusao dos botoes para as telas de cadastros, exclusoes, consultas e para sair do sistema
 
-Versao 0.1
+Versao 0.1 - Base
 Criado projeto C# base
 Criado arquivo CHANGELOG.txt
 Adicionado banco de dados db_scs.sql
