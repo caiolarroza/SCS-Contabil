@@ -1,7 +1,6 @@
 # Interdisciplinar
-
 Trabalho Interdisciplinar
 
-Branch de produção do trabalho. So será atualizado caso a versão em testing seja dada como estável o suficiente.
+Branch dedicado a versão de desenvolvimento do aplicativo. So serão aceitos requests pelos desenvolvedores (Matheus/Danilo).
 
-Caminho de desenvolvimento: dev -> testing -> master
+Aos testers, usem o branch testing para testes e atualizações.
