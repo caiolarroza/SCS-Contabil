@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SCSCONTABIL2"
         mc:Ignorable="d"
-        Title="CONSULTA DE USUÁRIO" Height="409" Width="969" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid Margin="0,0,0,-2">
+        Title="Consulta de Usuários" Height="409" Width="969" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-2" Background="#7FF0F0FE">
         <Grid.RowDefinitions>
             <RowDefinition Height="258*"/>
             <RowDefinition Height="53*"/>

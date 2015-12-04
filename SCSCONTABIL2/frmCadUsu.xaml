@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SCSCONTABIL2"
         mc:Ignorable="d"
-        Title="CADASTRO DE USUÁRIOS" Height="500" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid Width="744" Height="472">
+        Title="Cadastro de Usuários" Height="500" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Width="744" Height="472" Background="#7FF0F0FE">
         <Grid.RowDefinitions>
             <RowDefinition Height="236*"/>
             <RowDefinition Height="121*"/>

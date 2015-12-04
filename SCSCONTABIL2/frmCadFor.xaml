@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:SCSCONTABIL2"
         xmlns:xctk ="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="CADASTRO DE FORNECEDOR" Height="806" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid Margin="0,0,0,46.8">
+        Title="Cadastro de Fornecedor" Height="806" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,46.8" Background="#7FF0F0FE">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>

@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:SCSCONTABIL2"
         xmlns:xctk ="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="Venda PEPS" Height="650.106" Width="943.877" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <GroupBox x:Name="groupBox1" Header="Informações da venda" HorizontalAlignment="Left" Margin="8,282,0,0" VerticalAlignment="Top" Width="432" Height="201"/>
-        <GroupBox x:Name="groupBox" Header="Dados do Fornecedor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,64,0,0" Height="213" Width="432" FontSize="13.333"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="541,10,0,0" VerticalAlignment="Top" Height="579" Width="383" AutoGenerateColumns="False" IsReadOnly="True" MouseDoubleClick="dataGrid_MouseDoubleClick">
+        Title="Venda PEPS" Height="552.106" Width="943.877" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#7FF0F0FE">
+        <GroupBox x:Name="groupBox1" Header="Informações da venda" HorizontalAlignment="Left" Margin="15,282,0,29" Width="432"/>
+        <GroupBox x:Name="groupBox" Header="Dados do Fornecedor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,64,0,0" Height="213" Width="432" FontSize="13.333"/>
+        <DataGrid x:Name="dataGrid" Margin="560,10,10,0" VerticalAlignment="Top" Height="352" AutoGenerateColumns="False" IsReadOnly="True" MouseDoubleClick="dataGrid_MouseDoubleClick" Width="368">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding ProCod}" Header="Código" />
                 <DataGridTextColumn Binding="{Binding ProNom}" Header="Nome" />
@@ -18,45 +18,45 @@
                 <DataGridTextColumn Binding="{Binding ProDat}" Header="Data de Compra" />
             </DataGrid.Columns>
         </DataGrid>
-        <Label x:Name="label" Content="Produto*: " HorizontalAlignment="Left" Margin="16,309,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label2" Content="Quantidade*: " HorizontalAlignment="Left" Margin="16,345,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label3" Content="Valor Unitário(R$)*: " HorizontalAlignment="Left" Margin="16,372,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label4" Content="Valor Total(R$)*: " HorizontalAlignment="Left" Margin="16,407,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label5" Content="Data*: " HorizontalAlignment="Left" Margin="16,444,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label1" Content="Razão Social: *" HorizontalAlignment="Left" Height="32" Margin="10,85,0,0" VerticalAlignment="Top" Width="99"/>
-        <Label x:Name="label2_Copy" Content="Nome Fantasia:*" HorizontalAlignment="Left" Height="33" Margin="10,120,0,0" VerticalAlignment="Top" Width="109"/>
-        <TextBox x:Name="txtRazao" HorizontalAlignment="Left" Height="20" Margin="160,85,0,0" CharacterCasing="Upper" TextWrapping="Wrap" Width="256" FontSize="13.333" TabIndex="2" IsEnabled="False" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="20" Margin="160,120,0,0" CharacterCasing="Upper" TextWrapping="Wrap" Width="256" TabIndex="3" IsEnabled="False" VerticalAlignment="Top"/>
-        <Label x:Name="label3_Copy" Content="Inscrição Municipal:*" HorizontalAlignment="Left" Height="30" Margin="8,158,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="label" Content="Produto*: " HorizontalAlignment="Left" Margin="25,311,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Quantidade*: " HorizontalAlignment="Left" Margin="25,346,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Valor Unitário(R$)*: " HorizontalAlignment="Left" Margin="25,381,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Valor Total(R$)*: " HorizontalAlignment="Left" Margin="25,416,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5" Content="Data*: " HorizontalAlignment="Left" Margin="25,451,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Razão Social: *" HorizontalAlignment="Left" Height="32" Margin="25,85,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label x:Name="label2_Copy" Content="Nome Fantasia:*" HorizontalAlignment="Left" Height="33" Margin="25,120,0,0" VerticalAlignment="Top" Width="109"/>
+        <TextBox x:Name="txtRazao" HorizontalAlignment="Left" Height="20" Margin="167,85,0,0" CharacterCasing="Upper" TextWrapping="Wrap" Width="249" FontSize="13.333" TabIndex="2" IsEnabled="False" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="20" Margin="167,120,0,0" CharacterCasing="Upper" TextWrapping="Wrap" Width="249" TabIndex="3" IsEnabled="False" VerticalAlignment="Top"/>
+        <Label x:Name="label3_Copy" Content="Inscrição Municipal:*" HorizontalAlignment="Left" Height="30" Margin="25,158,0,0" VerticalAlignment="Top" Width="134"/>
         <xctk:MaskedTextBox
     		x:Name="txtImu"
-    		Margin="160,157,519.6,0"
+    		Margin="167,157,513,0"
     		Mask="00.000"
     		FontSize="13.333" Height="30" TabIndex="4" IsEnabled="False" VerticalAlignment="Top" />
         <xctk:MaskedTextBox
     		x:Name="txtIes"
-    		Margin="160,196,519.6,0"
+    		Margin="167,194,513,0"
     		Mask="000.000.000.000"
     		FontSize="13.333" Height="30" TabIndex="5" IsEnabled="False" VerticalAlignment="Top"/>
-        <Label x:Name="label5_Copy" Content="CNPJ:*" HorizontalAlignment="Left" Height="35" Margin="10,231,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label x:Name="label5_Copy" Content="CNPJ:*" HorizontalAlignment="Left" Height="35" Margin="25,231,0,0" VerticalAlignment="Top" Width="62"/>
         <xctk:MaskedTextBox
     		x:Name="txtCnpj"
-    		Margin="160,232,519.6,0"
+    		Margin="167,232,513,0"
     		Mask="00.000.000/0000-00"
     		FontSize="13.333" Height="30" TabIndex="6" IsEnabled="False" VerticalAlignment="Top"/>
-        <Label x:Name="label4_Copy" Content="Inscrição Estadual:*" HorizontalAlignment="Left" Margin="10,199,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtProd" HorizontalAlignment="Left" Height="23" Margin="160,307,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="256" IsEnabled="False"/>
-        <TextBox x:Name="txtQtd" HorizontalAlignment="Left" Height="23" Margin="160,342,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="256" KeyDown="txtQtd_KeyDown" LostFocus="txtQtd_LostFocus"/>
-        <TextBox x:Name="txtVun" HorizontalAlignment="Left" Height="23" Margin="160,374,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="256" TextChanged="txtVun_TextChanged" KeyDown="txtVun_KeyDown" LostFocus="txtVun_LostFocus"/>
-        <TextBox x:Name="txtVto" HorizontalAlignment="Left" Height="23" Margin="160,407,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="256" TextChanged="txtVto_TextChanged" KeyDown="txtVto_KeyDown" LostFocus="txtVto_LostFocus" IsEnabled="False"/>
-        <xctk:MaskedTextBox x:Name="txtData"  Mask="00/00/0000" HorizontalAlignment="Left" Height="30" Margin="160,441,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="256"/>
+        <Label x:Name="label4_Copy" Content="Inscrição Estadual:*" HorizontalAlignment="Left" Margin="25,194,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtProd" HorizontalAlignment="Left" Height="23" Margin="167,311,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="256" IsEnabled="False"/>
+        <TextBox x:Name="txtQtd" HorizontalAlignment="Left" Height="23" Margin="167,346,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="256" KeyDown="txtQtd_KeyDown" LostFocus="txtQtd_LostFocus"/>
+        <TextBox x:Name="txtVun" HorizontalAlignment="Left" Height="23" Margin="167,381,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="256" TextChanged="txtVun_TextChanged" KeyDown="txtVun_KeyDown" LostFocus="txtVun_LostFocus"/>
+        <TextBox x:Name="txtVto" HorizontalAlignment="Left" Height="23" Margin="167,416,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="256" TextChanged="txtVto_TextChanged" KeyDown="txtVto_KeyDown" LostFocus="txtVto_LostFocus" IsEnabled="False"/>
+        <xctk:MaskedTextBox x:Name="txtData"  Mask="00/00/0000" HorizontalAlignment="Left" Height="30" Margin="167,451,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="256"/>
         <Label x:Name="label_Copy" Content="Digite parte do nome do produto: *" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="219"/>
-        <TextBox x:Name="txtBusca" HorizontalAlignment="Left" Height="28" Margin="234,20,0,0" CharacterCasing="Upper" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" TabIndex="0"/>
+        <TextBox x:Name="txtBusca" HorizontalAlignment="Left" Height="28" Margin="241,20,0,0" CharacterCasing="Upper" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" TabIndex="0"/>
         <Button x:Name="btnBus" Content="BUSCAR" HorizontalAlignment="Left" Height="28" Margin="450,20,0,0" VerticalAlignment="Top" Width="86" Click="btnBus_Click" TabIndex="1"/>
-        <Button x:Name="btnConfirmar" Content="Confirmar" HorizontalAlignment="Left" Margin="107,539,0,0" VerticalAlignment="Top" Width="88" Click="btnConfirmar_Click"/>
-        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="263,539,0,0" VerticalAlignment="Top" Width="88" Click="btnVoltar_Click"/>
-        <Label x:Name="lblStatus" Content="&#xA;" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="35" Margin="16,492,0,0" VerticalAlignment="Top" Width="424"/>
-        <Label x:Name="label12" Content="Todos os campos com * são obrigatórios" HorizontalAlignment="Left" Height="28" Margin="0,574,0,0" VerticalAlignment="Top" Width="252"/>
+        <Button x:Name="btnConfirmar" Content="Confirmar" HorizontalAlignment="Left" Margin="460,332,0,0" VerticalAlignment="Top" Width="88" Click="btnConfirmar_Click"/>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="460,379,0,0" VerticalAlignment="Top" Width="88" Click="btnVoltar_Click"/>
+        <Label x:Name="lblStatus" Content="&#xA;" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="30" Margin="578,379,0,0" VerticalAlignment="Top" Width="342"/>
+        <Label x:Name="label12" Content="Todos os campos com * são obrigatórios" HorizontalAlignment="Left" Height="28" Margin="626,432,0,0" VerticalAlignment="Top" Width="252"/>
 
     </Grid>
 </Window>
