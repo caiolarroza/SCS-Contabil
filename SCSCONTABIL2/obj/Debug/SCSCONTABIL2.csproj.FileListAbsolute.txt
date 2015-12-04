@@ -268,3 +268,6 @@ F:\FATEC\2º Semestre\projeto\SCSCONTABIL2\bin\Debug\Stimulsoft.Report.Wpf.dll
 F:\FATEC\2º Semestre\projeto\SCSCONTABIL2\bin\Debug\Stimulsoft.Base.xml
 F:\FATEC\2º Semestre\projeto\SCSCONTABIL2\bin\Debug\Stimulsoft.Report.xml
 F:\FATEC\2º Semestre\projeto\SCSCONTABIL2\bin\Debug\Stimulsoft.Report.Wpf.xml
+E:\Setor Desenvolvimento\FATEC\Interdisciplinar\SCSCONTABIL2\bin\Debug\SCSCONTABIL2.exe.config
+E:\Setor Desenvolvimento\FATEC\Interdisciplinar\SCSCONTABIL2\obj\Debug\SCSCONTABIL2.exe
+E:\Setor Desenvolvimento\FATEC\Interdisciplinar\SCSCONTABIL2\obj\Debug\SCSCONTABIL2.pdb
