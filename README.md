@@ -1,6 +1,3 @@
-# SCS - Assessoria Contábil
-Trabalho Interdisciplinar
+SCS Contábil - Projeto Interdisciplinar
 
-Branch dedicado a versão de desenvolvimento do aplicativo. So serão aceitos requests pelos desenvolvedores (Matheus/Giovanni/Caio).
-
-Aos testers, usem o branch testing para testes e atualizações.
+Software para gerenciamento de estoque, desenvolvido na linguagem C#, durante o 2° semestre do curso de análise e desenvolvimento de software na Fatec São Caetano do Sul.
